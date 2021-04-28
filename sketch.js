@@ -10,7 +10,7 @@ var engine, world;
 var rand;
 
 var drops = [];
-var max = 100;
+var maxDrops = 100;
 
 var thunderCreatedFrame=0;
 
@@ -38,7 +38,7 @@ function setup(){
    if(frameCount % 100 === 0 )
    {
 
-    for(var i=0 ;i<max ; i++)
+    for(var i=0 ;i<maxDrops ; i++)
     {
 
         drops.push(new Drop(random(0,400),random(0,400)));
@@ -92,7 +92,7 @@ function draw(){
     umbrella.display();
 
     //display rain drops
-   for(var i=0; i<max ;i++)
+   for(var i=0; i<maxDrops ;i++)
    {
 
         drops[i].display();
